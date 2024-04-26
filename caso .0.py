@@ -5,7 +5,9 @@ import os
 
 # Função para preencher zeros à esquerda na primeira coluna
 def preencher_zeros(texto):
-    # Se o texto tiver mais de 5 caracteres, remova os 2 últimos caracteres 
+    # Se o texto tiver mais de 5 caracteres, remova os 2 últimos caracteres
+    if len(texto) > 5:
+        texto = texto[:-2]
     # Preencha com zeros à esquerda até 11 dígitos
     return texto.zfill(11)
 
